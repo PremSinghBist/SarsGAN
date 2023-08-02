@@ -1,0 +1,12 @@
+{
+    "seq_length": 20,
+    "min_num_examples": 1,
+    "total_records": 0,
+    "num_of_classes": 1,
+    "num_examples": {
+        "SARS-COV_2": 9
+    },
+    "class_mapping": {
+        "0": "SARS-COV_2"
+    }
+}

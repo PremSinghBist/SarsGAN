@@ -1,0 +1,4 @@
+data/log
+data/log_archive
+src/common/plotter/fig
+*.pyc 
