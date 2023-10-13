@@ -5,12 +5,12 @@ Additionally, the implementation of the SARS-Escape model is available through t
 For research purposes, all three Escape datasets, including Greany, Baum, and the Validation dataset, are publicly available on Zenodo: doi: 10.5281/zenodo.7142638.
 Furthermore, the newly trained model, enhanced with augmented sequences, are located within the "pretrained" directory for reference and utilization.
 
-##Network Training:
+## Network Training:
 Access the training and validation datasets at data/protein/train_data to initiate the network training process. This directory contains the necessary datasets for both training and validation, essential for ensuring the model's accuracy and effectiveness during the training phase.
 
 To train the GAN network, utilize the train_gan.py script located in the src directory. This script facilitates the training process, allowing you to refine the GAN model.
 
-##Generating Spike Sequences:
+## Generating Spike Sequences:
 
 To generate Spike sequences, employ the generate.py script found in the src directory. This script empowers the generation of Spike protein sequences, offering flexibility and control over the output.
 
