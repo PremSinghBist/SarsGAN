@@ -81,11 +81,50 @@ def plot_sequence_identity_whisker(identities, steps, fig_name):
     ax.set_xticklabels(steps, rotation=18)
     ax.set_xlabel('Learning Steps')
 
-    plt.savefig(FIG_DIR+os.path.sep+fig_name)
+    save_comp_path = FIG_DIR+os.path.sep+fig_name
+    plt.savefig(save_comp_path)
     plt.show()
+    print("Figure saved successfull to path: ", save_comp_path)
     
     #Clear figure
     plt.clf()
+
+def plot_sequence_identity_whisker1(identities, steps, fig_name):
+    # Set the style
+    plt.style.use('seaborn-whitegrid')
+
+    # Define the figure and axes
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # create box with filled color
+    bp = ax.boxplot(identities, notch=True, patch_artist=True)
+    for patch in bp['boxes']:
+        patch.set_facecolor('darkorange')
+        
+    #Change outliers colors to solid dots
+    for outlier in bp['fliers']:
+        outlier.set(marker='o', markersize=8, markerfacecolor='black',  linestyle='none')
+        
+        
+
+    # Set labels and title
+    ax.set_title('Identity of Generated Spikes to Natural Ones', fontsize=16)
+    ax.set_ylabel('Identity (%)', fontsize=14)
+    ax.set_xlabel('Learning Steps', fontsize=14)
+
+    # Set x-axis labels with rotation
+    ax.set_xticklabels(steps, rotation=45, ha='right', fontsize=12)
+
+    # Adjust layout and padding
+    plt.tight_layout()
+
+    # Save and show the plot
+    fig_name = 'boxplot_identity_1.png'
+    save_comp_path = os.path.join(FIG_DIR, fig_name)
+    plt.savefig(save_comp_path)
+    plt.show()
+
+    print("Figure saved successfully to path:", save_comp_path)
      
         
 

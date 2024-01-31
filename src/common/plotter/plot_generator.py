@@ -1,11 +1,12 @@
 import os 
 # Set CUDA device
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 # Disable XLA compilation
 os.environ["TF_XLA_FLAGS"] = ""
 
 import tensorflow as tf
-from tensorflow.summary import FileWriter
+from tensorflow.summary import FileWriter 
+
 import datetime
 import plotter_util as plt_util
 
@@ -113,7 +114,7 @@ def plot_sequence_identity_whisker(tag_dict, fig_name):
                 train_val_identity = []
             global_step_track_no  = global_step_track_no * 2
             
-    plt_util.plot_sequence_identity_whisker(identities, steps, fig_name) 
+    plt_util.plot_sequence_identity_whisker1(identities, steps, fig_name) 
 
 def plot_train_val_identity(tag_dict, fig_name):
     val_identity_dict = tag_dict['Blast/val/Identity']
@@ -166,9 +167,9 @@ if __name__ == "__main__":
     current_datetime = datetime.datetime.now()
     label = current_datetime.strftime("%d_%b_%H_%M_%S_%f_non_sat")[:-3] 
 
-    plot_sequence_identity_whisker(tag_dict, f'seq_identity_whisker_{label}.png')
-    plot_disc_gen_loss(tag_dict, f'disc_gen_loss_{label}.png')
-    plot_train_val_identity(tag_dict, f'train_val_identity_{label}.png')
+    plot_sequence_identity_whisker(tag_dict, f'11_21_seq_identity_whisker_{label}.png')
+    # plot_disc_gen_loss(tag_dict, f'disc_gen_loss_{label}.png')
+    # plot_train_val_identity(tag_dict, f'train_val_identity_{label}.png')
     
        
     

@@ -6,7 +6,7 @@ MODEL_TYPE = 'sngan'
 DATASET = 'protein'
 CURRENT_DIRECTORY = os.path.dirname(__file__)
 
-flags.DEFINE_string('dataset', '/home/perm/ProteinGAN/data/'+DATASET+ "/Length_512_lab_test_37_v2",
+flags.DEFINE_string('dataset', '/home/perm/ProteinGAN/data/'+DATASET+ "/training_data",
                     'Dataset to use for training. [mnist, \\wgan\\Length_128_Single cifar10]')
 flags.DEFINE_string('properties_file', "properties.json", 'File name of properties file. [properties.json]')
 flags.DEFINE_string('model_type', MODEL_TYPE, 'Model used for training. [model]')
