@@ -1,4 +1,10 @@
-This codebase features a GAN implementation designed for generating SARS-COV-2 Spike sequences. It has been meticulously customized and fine-tuned to suit specific implementation requirements. The original codebase is credited to Repecka, D., Jauniskis, V., Karpus, L., et al., and can be accessed at the following link: https://doi.org/10.1038/s42256-021-00310-5:https://github.com/Biomatter-Designs/ProteinGAN , GitHub Repository. https://github.com/Biomatter-Designs/ProteinGAN
+The codebase presents an implementation of the paper "Generative AI in the Advancement of Viral Therapeutics for Predicting and Targeting Immune-Evasive SARS-CoV-2 Mutations," published in the IEEE Journal of Biomedical and Health Informatics. The paper can be accessed at https://doi.org/10.1109/JBHI.2024.3432649.
+
+This codebase features a GAN implementation designed to generate SARS-CoV-2 Spike protein sequences. It has been meticulously customized and fine-tuned to meet specific implementation requirements. The original codebase is credited to Repecka, D., Jauniskis, V., Karpus, L., et al., and can be accessed via the following link: https://doi.org/10.1038/s42256-021-00310-5, with the GitHub repository available at https://github.com/Biomatter-Designs/ProteinGAN.
+
+##Supplementary File:  The supplementary file described in the paper is also available  in the data/ directory. 
+
+
 
 Additionally, the implementation of the SARS-Escape model is available through the collaborative efforts of Prem Singh Bist, Hilal Tayara, and Kil To Chong. This model aids in the prediction of SARS-COV-2 escape variants and can be referenced in the article published in Briefings in Bioinformatics, Volume 24, Issue 3, May 2023, bbad140, accessible at the following DOI: https://doi.org/10.1093/bib/bbad140 , Prem Singh Bist et al., Briefings in Bioinformatics GitHub Repository: https://github.com/PremSinghBist/Sars-CoV-2-Escape-Model.git.
 
