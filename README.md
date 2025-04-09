@@ -2,7 +2,8 @@ The codebase presents an implementation of the paper "Generative AI in the Advan
 
 This codebase features a GAN implementation designed to generate SARS-CoV-2 Spike protein sequences. It has been meticulously customized and fine-tuned to meet specific implementation requirements. The original codebase is credited to Repecka, D., Jauniskis, V., Karpus, L., et al., and can be accessed via the following link: https://doi.org/10.1038/s42256-021-00310-5, with the GitHub repository available at https://github.com/Biomatter-Designs/ProteinGAN.
 
-## Supplementary File:  The supplementary file described in the paper is also available  in the data/ directory. 
+## Supplementary File: 
+The supplementary file described in the paper is also available  in the data/ directory. 
 
 
 
