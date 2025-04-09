@@ -8,7 +8,7 @@ For research purposes, all three Escape datasets, including Greany, Baum, and th
 Furthermore, the newly trained model, enhanced with augmented sequences, are located within the "pretrained" directory for reference and utilization.
 
 ## Supplementary File: 
-The supplementary file described in the paper is also available  in the data/ directory. The direct link to access is [Supplementary File] .(https://github.com/PremSinghBist/SarsGAN/blob/master/data/Supplementary%20File.pdf)
+The supplementary file described in the paper is also available  in the data/ directory. The direct link to access is [Supplementary File(https://github.com/PremSinghBist/SarsGAN/blob/master/data/Supplementary%20File.pdf) .
 
 
 
